@@ -1,0 +1,186 @@
+/* Estilos generales */
+body {
+    font-family: 'Uncial Antiqua', serif;
+    background-color: #f4e8c1;
+    color: #3a2828;
+    margin-bottom: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+}
+
+.logo img {
+    width: 20%;
+    height: auto;
+}
+
+.nav a {
+    margin-left: 70px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+/* Contenido */
+.content {
+    padding: 20px;
+}
+
+.introduccion {
+    text-align: center;
+    background-image: url('imagen/pergamino.jpg');
+    background-size: cover;
+    background-position: center;        
+}
+
+.intro {
+    text-indent: 50px;
+}
+
+/* Seleccion de Guias con Grid */
+.contenedorGuias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas */
+    grid-gap: 20px; /* Espacio entre las columnas y filas */
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.guia1 {
+    display: flex; /* Usa flexbox para alinear elementos */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: space-between; /* Espacia los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    height: auto; /* Altura del contenedor */
+}
+
+.guias {
+    text-align: center;
+}
+
+.descripcionGuia {
+    flex-grow: 1; /* Permite que la descripción ocupe el espacio disponible */
+    margin-bottom: 10px; /* Espacio entre la descripción y la imagen */
+}
+
+.contenedorGuias img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+/* Sección de Destinos con Grid */
+.contenedorDestinos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las columnas y filas */
+    padding: 20px;
+}
+
+.destino1, .destino2 , .destino3{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex; 
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.imagen1, .destino2 img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/*Imagen de la derecha del destino*/
+.imagenDerecha {
+    grid-column: 2; /* Imagen ocupa la segunda columna */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*Imagen de la izquierda del destino*/
+
+.imagenIzquierda{
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Para alternar los destinos */
+.destino1 {
+    grid-column: 1; /* Primer destino en la primera columna */
+    grid-row: 1;    /* Primer destino en la primera fila */
+}
+
+.destino2 {
+    grid-column: 2; /* Segundo destino en la segunda columna */
+    grid-row: 2;    /* Segundo destino en la segunda fila */
+}
+
+.destino3 {
+    grid-column: 1; /* Tercer destino en la primera columna */
+    grid-row: 3;    /* Tercer destino en la tercera fila */
+}
+
+/* Mejores Valorados */
+.mejoresValorados {
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón Saber Más */
+.botonSaberMas button {
+    background-color: #3a2828;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Uncial Antiqua', serif;
+    transition: background-color 0.3s ease;
+}
+
+.botonSaberMas button:hover {
+    background-color: #555;
+}
+
+/* Hero Section */
+.Hero {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #555;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
