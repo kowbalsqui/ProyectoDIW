@@ -51,19 +51,22 @@ body {
     grid-gap: 20px; /* Espacio entre las columnas y filas */
     padding: 20px;
     margin: auto;
-    border-radius: 5px;
 }
 
-.guia1 {
+.guia1, .guia2, .guia3 {
     display: flex; /* Usa flexbox para alinear elementos */
     flex-direction: column; /* Coloca los elementos en columna */
     justify-content: space-between; /* Espacia los elementos verticalmente */
     align-items: center; /* Centra los elementos horizontalmente */
     height: auto; /* Altura del contenedor */
+    border: 1px solid black;
+    border-radius: 5xp;
 }
 
 .guias {
     text-align: center;
+    text-decoration: lightgreen;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 .descripcionGuia {
@@ -71,11 +74,19 @@ body {
     margin-bottom: 10px; /* Espacio entre la descripción y la imagen */
 }
 
-.contenedorGuias img {
+.guia2-img, .guia3-img {
     width: 100%;
-    height: auto;
+    height: 150px;
+    top: 10px;
     max-width: 200px;
     object-fit: cover;
+}
+
+.guia1-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 200px;
 }
 
 /* Sección de Destinos con Grid */
@@ -154,6 +165,7 @@ body {
     cursor: pointer;
     font-family: 'Uncial Antiqua', serif;
     transition: background-color 0.3s ease;
+    margin: 5px ;  
 }
 
 .botonSaberMas button:hover {
