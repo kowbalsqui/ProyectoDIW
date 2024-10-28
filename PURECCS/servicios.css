@@ -123,6 +123,10 @@ body {
 }
 
 /* Precio de los paquetes */
+.price-button{
+    text-decoration: none;
+}
+
 .price-box {
     display: inline-block;
     padding: 10px 20px;
