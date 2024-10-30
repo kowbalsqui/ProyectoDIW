@@ -81,6 +81,7 @@ body {
     top: 10px;
     max-width: 200px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 /* Sección de Destinos con Grid */
@@ -89,6 +90,8 @@ body {
     grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
     grid-gap: 20px; /* Espacio entre las columnas y filas */
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .destino1, .destino2 , .destino3{
@@ -126,6 +129,30 @@ body {
     object-fit: cover;
     border-radius: 10px;
     place-items: center;
+}
+
+/* Testimonios */
+.testimonios{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contenedorTestimonios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap:20px;
+}
+
+.testimonio1 {
+    display: flex;
+    flex: wrap;
+    align-items: center ;
+}
+
+.user {
+    width: 20%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Para alternar los destinos */
