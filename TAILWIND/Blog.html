@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Medieval</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-yellow-100 text-gray-800 font-serif">
+
+    <!-- Barra de navegación -->
+    <nav class="bg-gray-900 bg-opacity-90 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 class="text-4xl font-bold text-yellow-300">Crónicas de la Edad Media</h1>
+            <div class="flex space-x-6">
+                <a href="#" class="text-yellow-200 hover:text-yellow-400 text-lg">Inicio</a>
+                <a href="#" class="text-yellow-200 hover:text-yellow-400 text-lg">Categorias</a>
+                <a href="#" class="text-yellow-200 hover:text-yellow-400 text-lg">Sobre mi</a>
+                <a href="../PURECCS/home.html" class="text-yellow-200 hover:text-yellow-400 text-lg">Viajes Elficos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="relative w-full h-96 mb-10">
+        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Hero" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-60 flex items-center justify-end pr-10">
+            <div class="text-yellow-100 max-w-md">
+                <h2 class="text-5xl font-bold mb-4">Bienvenido a las Crónicas</h2>
+                <p class="text-lg">Sumérgete en los relatos de héroes, batallas y leyendas de la Edad Media. Descubre las historias que marcaron una época de caballeros y mitos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de publicaciones -->
+    <div class="max-w-6xl mx-auto px-6 py-10">
+        <h2 class="text-4xl font-bold mb-8 text-center text-gray-800 border-b-4 border-gray-700 pb-2">Publicaciones Recientes</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Tarjeta de publicación 1 -->
+            <div class="bg-yellow-50 border border-gray-400 rounded-lg shadow-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Publicación 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Título de la Publicación 1</h3>
+                    <p class="text-gray-700 mt-4">Este es un resumen breve de la publicación. Aquí puedes escribir un poco sobre el contenido.</p>
+                    <a href="#" class="block bg-gray-800 text-yellow-50 hover:bg-gray-700 mt-6 py-2 text-center rounded">Leer más</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta de publicación 2 -->
+            <div class="bg-yellow-50 border border-gray-400 rounded-lg shadow-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1526742072388-0c02b78f9187" alt="Publicación 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Título de la Publicación 2</h3>
+                    <p class="text-gray-700 mt-4">Este es un resumen breve de la publicación. Aquí puedes escribir un poco sobre el contenido.</p>
+                    <a href="#" class="block bg-gray-800 text-yellow-50 hover:bg-gray-700 mt-6 py-2 text-center rounded">Leer más</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta de publicación 3 -->
+            <div class="bg-yellow-50 border border-gray-400 rounded-lg shadow-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1556742031-b358f4c7f80e" alt="Publicación 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Título de la Publicación 3</h3>
+                    <p class="text-gray-700 mt-4">Este es un resumen breve de la publicación. Aquí puedes escribir un poco sobre el contenido.</p>
+                    <a href="#" class="block bg-gray-800 text-yellow-50 hover:bg-gray-700 mt-6 py-2 text-center rounded">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-900 bg-opacity-90 text-yellow-100 shadow-md mt-auto py-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <p>&copy; 2024 Crónicas de la Edad Media. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
