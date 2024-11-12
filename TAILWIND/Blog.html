@@ -3,76 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Medieval</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Exploradores de la Tierra Media</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-yellow-100 text-gray-800 font-serif">
+<body class="bg-gray-50">
 
     <!-- Barra de navegación -->
-    <nav class="bg-gray-900 bg-opacity-90 shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <h1 class="text-4xl font-bold text-yellow-300">Crónicas de la Edad Media</h1>
-            <div class="flex space-x-6">
-                <a href="#" class="text-yellow-200 hover:text-yellow-400 text-lg">Inicio</a>
-                <a href="#" class="text-yellow-200 hover:text-yellow-400 text-lg">Categorias</a>
-                <a href="#" class="text-yellow-200 hover:text-yellow-400 text-lg">Sobre mi</a>
-                <a href="../PURECCS/home.html" class="text-yellow-200 hover:text-yellow-400 text-lg">Viajes Elficos</a>
+    <nav class="bg-gray-900 bg-opacity-70 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="text-4xl font-bold text-white">Exploradores de la Tierra Media</h1>
+                <div class="flex space-x-4">
+                    <a href="Blog.html" class="text-gray-200 hover:text-blue-400">Inicio</a>
+                    <a href="#" class="text-gray-200 hover:text-blue-400">Sobre mí</a>
+                    <a href="#" class="text-gray-200 hover:text-blue-400">Contacto</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Sección Hero -->
-    <section class="relative w-full h-96 mb-10">
-        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Hero" class="absolute inset-0 w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gray-900 bg-opacity-60 flex items-center justify-end pr-10">
-            <div class="text-yellow-100 max-w-md">
-                <h2 class="text-5xl font-bold mb-4">Bienvenido a las Crónicas</h2>
-                <p class="text-lg">Sumérgete en los relatos de héroes, batallas y leyendas de la Edad Media. Descubre las historias que marcaron una época de caballeros y mitos.</p>
-            </div>
+    <!-- Barra de búsqueda -->
+    <div class="max-w-6xl mx-auto px-4 py-4">
+        <div class="relative">
+            <input type="text" placeholder="Buscar artículos..." class="w-full py-2 pl-10 pr-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+            <svg class="absolute left-3 top-3 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18l6-6m0 0a8 8 0 10-1 1m1 1a8 8 0 11-1-1"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <img src="Imagenes/hero.jpg" alt="La Tierra Media" class="w-full h-96 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h2 class="text-5xl font-bold text-white text-center">Explora los Misterios de la Tierra Media</h2>
         </div>
     </section>
 
-    <!-- Sección de publicaciones -->
-    <div class="max-w-6xl mx-auto px-6 py-10">
-        <h2 class="text-4xl font-bold mb-8 text-center text-gray-800 border-b-4 border-gray-700 pb-2">Publicaciones Recientes</h2>
+    <!-- Sección de Categorías -->
+    <div class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-4xl font-bold mb-6 text-center text-gray-800">Categorías Mas Vistas</h2>
+        <div class="flex justify-center space-x-6">
+            <a href="#" class="text-gray-800 hover:text-blue-600">Aventuras</a>
+            <a href="#" class="text-gray-800 hover:text-blue-600">Historia</a>
+            <a href="#" class="text-gray-800 hover:text-blue-600">Cultura</a>
+        </div>
+    </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Tarjeta de publicación 1 -->
-            <div class="bg-yellow-50 border border-gray-400 rounded-lg shadow-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Publicación 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-gray-800">Título de la Publicación 1</h3>
-                    <p class="text-gray-700 mt-4">Este es un resumen breve de la publicación. Aquí puedes escribir un poco sobre el contenido.</p>
-                    <a href="#" class="block bg-gray-800 text-yellow-50 hover:bg-gray-700 mt-6 py-2 text-center rounded">Leer más</a>
+    <!-- Sección de Publicaciones Recientes -->
+    <div class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-4xl font-bold mb-6 text-center text-gray-800">Publicaciones Recientes</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Tarjeta de publicación 1 (Comarca) -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300">
+                <img src="Imagenes/comarca.jpg" alt="La Comarca" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">La Comarca: El Refugio de los Hobbits</h3>
+                    <p class="text-gray-600 mt-2">Acompáñanos en un viaje por la mágica Comarca, hogar de los Hobbits, en el corazón de la Tierra Media.</p>
+                    <p class="text-gray-500 text-sm mt-2">Fecha de publicación: 10 de Noviembre, 2024 | Autor: Frodo Bolsón | Categoría: Aventuras</p>
+                    <a href="articulo.html" class="bg-gray-800 text-white hover:bg-gray-700 mt-4 inline-block px-4 py-2 rounded">Leer más</a>
                 </div>
             </div>
 
-            <!-- Tarjeta de publicación 2 -->
-            <div class="bg-yellow-50 border border-gray-400 rounded-lg shadow-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1526742072388-0c02b78f9187" alt="Publicación 2" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-gray-800">Título de la Publicación 2</h3>
-                    <p class="text-gray-700 mt-4">Este es un resumen breve de la publicación. Aquí puedes escribir un poco sobre el contenido.</p>
-                    <a href="#" class="block bg-gray-800 text-yellow-50 hover:bg-gray-700 mt-6 py-2 text-center rounded">Leer más</a>
+            <!-- Tarjeta de publicación 2 (Minas Tirith) -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300">
+                <img src="Imagenes/minas.jpg" alt="Minas Tirith" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">Minas Tirith: La Ciudad Blanca</h3>
+                    <p class="text-gray-600 mt-2">Explora la majestuosa Minas Tirith, la capital de Gondor, un bastión de esperanza en la Tierra Media.</p>
+                    <p class="text-gray-500 text-sm mt-2">Fecha de publicación: 15 de Noviembre, 2024 | Autor: Aragorn | Categoría: Historia de Gondor</p>
+                    <a href="articulo.html" class="bg-gray-800 text-white hover:bg-gray-700 mt-4 inline-block px-4 py-2 rounded">Leer más</a>
                 </div>
             </div>
 
-            <!-- Tarjeta de publicación 3 -->
-            <div class="bg-yellow-50 border border-gray-400 rounded-lg shadow-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1556742031-b358f4c7f80e" alt="Publicación 3" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-gray-800">Título de la Publicación 3</h3>
-                    <p class="text-gray-700 mt-4">Este es un resumen breve de la publicación. Aquí puedes escribir un poco sobre el contenido.</p>
-                    <a href="#" class="block bg-gray-800 text-yellow-50 hover:bg-gray-700 mt-6 py-2 text-center rounded">Leer más</a>
+            <!-- Tarjeta de publicación 3 (Rivendel) -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300">
+                <img src="Imagenes/Rivendell.webp" alt="Rivendel" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">Rivendel: El Refugio de los Elfos</h3>
+                    <p class="text-gray-600 mt-2">Una mirada profunda a Rivendel, el hogar de los sabios Elfos, un lugar de belleza y serenidad.</p>
+                    <p class="text-gray-500 text-sm mt-2">Fecha de publicación: 20 de Noviembre, 2024 | Autor: Elrond | Categoría: Cultura Elfica</p>
+                    <a href="articulo.html" class="bg-gray-800 text-white hover:bg-gray-700 mt-4 inline-block px-4 py-2 rounded">Leer más</a>
                 </div>
             </div>
+
         </div>
     </div>
 
     <!-- Pie de página -->
-    <footer class="bg-gray-900 bg-opacity-90 text-yellow-100 shadow-md mt-auto py-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <p>&copy; 2024 Crónicas de la Edad Media. Todos los derechos reservados.</p>
+    <footer class="bottom-0 bg-gray-900 bg-opacity-70 shadow-lg mt-10">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <p class="text-center text-gray-200">&copy; 2024 Exploradores de la Tierra Media. Todos los derechos reservados.</p>
         </div>
     </footer>
 
